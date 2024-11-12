@@ -1,0 +1,15 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /treasure/
+
+    # 將空白目錄請求重定向到 login.php
+    RewriteRule ^$ login.php [L]
+    
+    # 如果要避免直接訪問 .php 文件，可以添加以下條件
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L]
+</IfModule>

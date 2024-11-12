@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.banner{
+    background-color: rgb(236, 231, 212);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img{
+    width: 80%;
+}
+
+
+.header{
+    background-color: rgb(142, 195, 31); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.header img{
+    height: 48px;
+    margin: auto; 
+}
+
+.selection{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(236, 231, 212); 
+}
+
+.selection img{
+    width: 13%;
+    cursor: pointer;
+    transition: border-color 0.3s ease; /* 添加過渡效果 */
+    background-color: rgb(142, 195, 31);
+    padding: 5px 10px;
+    margin: 10px 10px;
+    border-radius: 15px;
+}
+
+.selection img:hover{
+    background-color: #0d6efd;
+}
+
+.content1,.content3{
+    background-color: rgb(236, 231, 212); 
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content4{
+    display: none; 
+    background-color: rgb(236, 231, 212); 
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.content4 form{
+    width: 45%;
+    animation: slideInFromLeft 0.5s forwards; 
+}
+
+.content4 form button{
+    background-color: rgb(142, 195, 31); 
+    border: none;
+    float: right;
+}
+
+.content5{
+    display: none; 
+    background-color: rgb(236, 231, 212); 
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.content5 form{
+    width: 55%;
+    animation: slideInFromLeft 0.5s forwards; 
+}
+
+.content5 form button{
+    background-color: rgb(142, 195, 31); 
+    border: none;
+    margin-top: 4%;
+    float: right;
+}
+
+
+
+.form-group{
+    margin-bottom: 5%;
+}
+
+.form-group span{
+    color: red;
+}
+
+.content2{
+    background-color: rgb(236, 231, 212); 
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 20%;
+}
+
+.content2 img{
+    width: 65%;
+    padding-top: 10%;
+    animation: slideInFromLeft 0.5s forwards; 
+}
+
+
+.content1 img,.content3 img{
+    width: 65%;
+    padding-top: 3%;
+    padding-bottom: 15%;
+    animation: slideInFromLeft 0.5s forwards; 
+}
+
+.carousel-control-prev-icon,.carousel-control-next-icon {
+    background-color: rgb(142, 195, 31); 
+}
+
+.content1.show {
+    display: flex;
+    
+}
+.content2.show {
+    display: flex;
+
+}
+.content3.show {
+    display: flex;  
+}
+
+.content4.show {
+    display: flex;  
+}
+
+.content5.show {
+    display: flex;  
+}
+/*---------------------------------------------------------*/
+.bottom{
+    background-color: rgb(236, 231, 212) ;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.bottom-item1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-item1 img{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.bottom-item2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bottom-item2-img1{
+    width: 22%;
+    margin-bottom: 10px;
+}
+
+.bottom-item2-img2{
+    width: 90%;
+}
+
+.bottom-item3{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.bottom-item3-img1{
+    width: 50%;
+    margin-bottom: 18px;
+}
+
+.bottom-item3-img2{
+    width: 50%;
+}
+
+.bottom-item1 img{
+    width: 50%;
+    margin-top: 10px;
+}
+
+.bottom1{
+    background-color: rgb(236, 231, 212) ;
+    display: flex;
+    height: 60px;
+}
+
+.bottom1-item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom1-item1 img{
+    width: 100%;
+}
+
+.bottom2{
+    background-color: rgb(236, 231, 212) ;
+    display: flex;
+}
+
+
+.bottom-item2-img5{
+    width: 30%;
+}
+.bottom-item2-img6{
+    width: 80%;
+    margin: 20px 0;
+}
+.bottom-item2-img7{
+    width: 30%;
+}
+.bottom-item2-img8{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.bottom-item3-img3{
+    width: 60%;
+}
+
+.bottom-item3-img4{
+    width: 65%;
+    margin: 20px 0;
+}
+
+.floor{
+    background-color: rgb(99, 79, 78);
+    display: flex;
+    height: 90px;
+}
+
+.floor-item1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floor-item1 img{
+    margin-right: 18px;
+}
+
+.floor-item1-img1{
+    width: 10%;
+}
+.floor-item1-img2{
+    width: 6%;
+}
+.floor-item1-img3{
+    width: 13%;
+}
+.floor-item1-img4{
+    width: 16%;
+}
+.floor-item1-img5{
+    width: 10%;
+}
+.floor-item1-img6{
+    width: 18%;
+}
+
+.floor1{
+    background-color: rgb(74,131,116);
+    color: rgba(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    font-size: 14px;
+
+}
+
+
+@media (max-width: 768px) {
+
+    .banner img{
+        width: 100%;
+    }
+
+    .header img{
+        height: 28px;
+        margin: auto; 
+    }
+
+    .selection img{
+        padding: 5px 5px;
+        margin: 10px 6px; 
+    }
+
+    .content1 img,.content3 img{
+        width: 90%;
+        padding-top: 3%;
+        padding-bottom: 15%;
+    }
+
+    .content22{
+        width: 80%;
+    }
+
+    .content4 form{
+        width: 60%;
+    }
+
+    .bottom{
+        padding-bottom: 0px;
+    }
+
+    .floor{
+        display: flex;
+        height: 40px;
+    }
+
+    .content4 form button{
+        padding: 3% 4%;
+    }
+
+    .floor1{
+        font-size: 9px;
+        height: 16px;
+    }
+}

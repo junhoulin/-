@@ -1,0 +1,16 @@
+<IfModule mod_php8.c>
+    php_value display_errors 1
+    php_value display_startup_errors 1
+    php_value max_execution_time 30
+    php_value max_input_vars 1000
+    php_value post_max_size 10M
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L]
+</IfModule>

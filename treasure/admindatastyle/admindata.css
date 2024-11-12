@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.leftimg {
+    width: 100px; /* 設定圖片寬度 */
+    animation: rotate 4s linear infinite; /* 使用名為 rotate 的動畫，4秒完成一次循環，並無限循環 */
+    margin: 10px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* 從0度開始旋轉 */
+    }
+    to {
+        transform: rotate(360deg); /* 旋轉到360度 */
+    }
+}
+
+.leftlist {
+    background-color: #23282d;
+    height: 100vh;
+    color: white;
+    position: fixed;
+    width: 16.6667%; /* 設置左側欄寬度 */
+    padding: 20px;
+}
+
+.leftlist h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px; /* 調整標題與列表間距 */
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.leftlist h1 i {
+    margin-right: 10px;
+}
+
+.line{
+    display: block;
+    width: 100%;
+    height: 1px; /* 線的高度 */
+    background-color: #ffffff; /* 白色背景 */
+    margin-top: 15px; /* 與上方元素的間距 */
+}
+
+.leftlist ul {
+    margin-top: 15px;
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+    letter-spacing: 2px;
+}
+
+.leftlist ul a {
+    text-decoration: none; /* 去除下劃線 */
+    color:white;
+}
+
+.leftlist li {
+    line-height: 45px;
+    cursor: pointer;
+    padding: 0 20px; /* 增加左右內邊距 */
+    display: block; /* 讓每個 li 元素佔滿整個寬度 */
+}
+
+.leftlist li:hover {
+    background-color: #696161;
+}
+
+.leftlist ul li a {
+    text-decoration: none; /* 去除下劃線 */
+    color: inherit; /* 繼承父元素的文字顏色 */
+}
+
+.leftlist ul li i {
+    margin-right: 10px;
+}
+
+
+
+/* 響應式設計 */
+
+@media (max-width: 768px) {
+    
+    .leftimg{
+        display: none;
+    }
+
+    .leftlist {
+        background-color: #23282d;
+        height: auto;
+        color: white;
+        position: relative;
+        width: 2000px; /* 設置左側欄寬度 */
+        padding: 20px;
+    }
+
+}
+
+/* ----------------------------rightlist------------------------------ */
+.rightlist {
+    height: 100%;
+    background-color: #f3f3f3;
+    margin-left: 16.6667%;
+    padding: 0;
+}
+
+.rightlist header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: flex-end; /* 將內容分散放置，將header移至右側 */
+    align-items: center; /* 垂直居中對齊 */
+    padding: 0 15px; /* 左右各15px的內邊距 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.rightlist header ul {
+    display: flex;
+    margin: 0;
+    padding: 0; 
+}
+
+.rightlist header ul li{
+    margin-right: 30px;
+    list-style: none;
+}
+
+.rightlist header ul li i{
+    margin-right: 5px;
+}
+
+.admindata1{
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:160px;
+}
+
+.admindata101 {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom:50%;
+}
+
+.admindata1-item{
+    width: 30%;
+    height: 110px;
+    margin: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top: 4px solid #0073aa;
+}
+
+.admindata1-item2{
+    width: 30%;
+    height: 100px;
+    margin: 18px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-top: 4px solid rgb(171, 68, 68);
+}
+
+
+.admindata1-item p{
+    padding: 30px;
+    margin-right: 30px;
+}
+
+.admindata1-item h3{
+    font-size: 2em;
+}
+
+.admindata1-item2 p{
+    padding: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.admindata2{
+    width: 96%;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-left: 2%;
+    margin-bottom: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#table_id{
+    font-size: 13.5px;
+}
+
+.unpaid, .underage {
+    color: red;
+}
+
+
+.chdmindata-item{
+    display: flex;
+    padding-bottom: 300px;
+}
+
+.selectadmindata{
+    width: 20%;
+    height: 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    margin: 3% 15%;
+    padding: 2% 3%;
+}
+
+.selectadmindata h3{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.selectadmindata input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 0.2em ;
+    margin-top: 8px;
+}
+
+.selectadmindata input:focus{
+    outline: none; 
+    border: 2px solid rgba(17, 157, 238, 0.3);
+    box-shadow: 0 0 5px rgba(17, 157, 238, 0.3);
+}
+
+.selectadmindataform1 button{
+    font-size: smaller;
+    width: 26%;
+    height: 28px;
+    color: #ffffff;
+    background-color: #0073aa;
+    margin-left: 70%;
+    margin-top: 7%;
+    border: 1px solid rgba(6, 238, 255, 0.1);
+    border-radius: 3px;
+}
+.selectadmindataform2{
+    margin-top: 26px;
+}
+
+.selectadmindataform2 button{
+    font-size: smaller;
+    width: 26%;
+    height: 28px;
+    color: #ffffff;
+    background-color: #ff0000;
+    margin-left: 70%;
+    margin-top: 7%;
+    border: 1px solid rgba(6, 238, 255, 0.1);
+    border-radius: 3px;
+}
+
+.changeadmindata{
+    margin-top: 2%;
+    height: 700px;
+    width: 30%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.changeadmindata h3{
+    font-size: 20px;
+    font-weight: 1000;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+.changeadmindata input{
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 0.2em ;
+    margin: 0.4em 15%;
+}
+
+.changeadmindata input:focus{
+    outline: none; 
+    border: 2px solid rgba(17, 157, 238, 0.3);
+    box-shadow: 0 0 5px rgba(17, 157, 238, 0.3);
+}
+
+.changeadmindata select{
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 0.2em ;
+    margin: 0.5em 15%;
+}
+
+.changeadmindata select:focus{
+    outline: none; 
+    border: 2px solid rgba(17, 157, 238, 0.3);
+    box-shadow: 0 0 5px rgba(17, 157, 238, 0.3);
+}
+
+.changeadmindata button{
+    font-size: smaller;
+    width: 14%;
+    height: 30px;
+    color: #ffffff;
+    background-color: #0073aa;
+    margin-left: 70%;
+    margin-top: 4%;
+    border: 1px solid rgba(6, 238, 255, 0.1);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .rightlist {
+        width: 1000px;
+        height: 100%;
+        background-color: #f3f3f3;
+        margin-left: 0%;
+        padding: 0;
+    }
+
+    .rightlist header {
+        font-size: smaller;
+        background-color: #ffffff;
+        width: 100%;
+        height: 50px;
+        color: rgb(0, 0, 0);
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: flex-start; /* 將內容分散放置，將header移至右側 */
+        align-items: center; /* 垂直居中對齊 */
+        padding: 0 15px; /* 左右各15px的內邊距 */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .admindata1{
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height:160px;
+    }
+
+    .admindata1-item{
+        width: 25%;
+        height: 110px;
+        flex-direction: column;
+    }
+
+    
+    .admindata1-item p{
+        padding: 10px;
+        margin-right: 12px;
+    }
+
+    .admindata1-item h3{
+        font-size: 1.5em;
+    }
+
+    .admindata2{
+        width: 1000px;
+        background-color: #ffffff;
+        padding: 30px;
+        margin-left: 2%;
+        margin-bottom: 10%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .changeadmindata{
+        margin-top: 2%;
+        height: 640px;
+        width: 45%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .selectadmindata{
+        width: 30%;
+        height: 5%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        margin: 3% 8%;
+        padding: 2% 3%;
+    }
+
+    .changeadmindata button{
+        width: 25%;
+        background-color: #0073aa;
+        margin-left: 60%;
+    }
+
+    .selectadmindata button{ 
+        width: 35%;
+        margin-left: 66%;
+        
+    }
+
+    .admindata1-item2 p{
+        font-size: smaller;
+    }
+
+    .admindata1-item2 p{
+        padding: 8px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+}
