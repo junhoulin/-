@@ -11,11 +11,17 @@
 - 使用HTML、JS、CSS進行前後端頁面製作
 - 前端頁面設計主要依據客戶提供的素材，確保設計符合客戶需求與品牌風格。
 - 使用 RESTful API 進行資料傳送，透過 HTTP 方法（POST）
+
 ![前端畫面1](https://plum-romantic-goldfish-871.mypinata.cloud/ipfs/QmckoxDd9JRAbPhvSLgsF3FMNgk1NeNovYxcYxofedqUBQ/index1.png "前端畫面1")
 ## 🎮後端網站
 - 使用 PHP 的 Session 技術來實現用戶登入驗證。
+
+![後端畫面1](https://plum-romantic-goldfish-871.mypinata.cloud/ipfs/QmckoxDd9JRAbPhvSLgsF3FMNgk1NeNovYxcYxofedqUBQ/admin1.png "後端畫面1")
 - 用戶在首次登錄時，伺服器會創建 Session 並將用戶的登入狀態保存在 Session 中，從而實現多頁面之間的登入狀態保持。
 - 在每個頁面加載時，會進行驗證，確保只有已登錄的用戶可以訪問受限頁面。若用戶未登錄，將會被重定向至登入頁面。
 - 使用 RESTful API，透過 HTTP 方法（POST、update、delete) 進行資料操作
+![後端畫面2](https://plum-romantic-goldfish-871.mypinata.cloud/ipfs/QmckoxDd9JRAbPhvSLgsF3FMNgk1NeNovYxcYxofedqUBQ/admin2.png "後端畫面2")
+![後端畫面3](https://plum-romantic-goldfish-871.mypinata.cloud/ipfs/QmckoxDd9JRAbPhvSLgsF3FMNgk1NeNovYxcYxofedqUBQ/admin4.png "後端畫面3")
+
 ## 🎰SERVER建置
 
